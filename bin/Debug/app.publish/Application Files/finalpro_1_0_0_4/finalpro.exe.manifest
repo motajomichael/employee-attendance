@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="finalpro.exe" version="1.0.0.4" publicKeyToken="846b77f7a378d11a" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="finalpro" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="finalpro.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Emgu.CV.dll" size="253952">
+      <assemblyIdentity name="Emgu.CV" version="2.2.1.1150" publicKeyToken="7281126722AB4438" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>w+MDyEFCwlRsOAbx+At7Xmu88Rde/m7UvBA83UsbQhU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Emgu.CV.GPU.dll" size="19968">
+      <assemblyIdentity name="Emgu.CV.GPU" version="2.2.1.1150" publicKeyToken="7281126722AB4438" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>j7ph8J9i57p60oI8HT55d8YrrwuurL7pldHs40f0ksM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Emgu.CV.ML.dll" size="32768">
+      <assemblyIdentity name="Emgu.CV.ML" version="2.2.1.1150" publicKeyToken="7281126722AB4438" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>8/ikil/pfOv2jGlTNu2BivCUEFb944HfwQRNBocnu5o=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Emgu.CV.UI.dll" size="126976">
+      <assemblyIdentity name="Emgu.CV.UI" version="2.2.1.1150" publicKeyToken="7281126722AB4438" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>GQudEnxHicqw3+K+3dDI+3Y+rAMsqKLa8dL0oDP4sy8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Emgu.Util.dll" size="32768">
+      <assemblyIdentity name="Emgu.Util" version="2.2.1.1150" publicKeyToken="7281126722AB4438" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>/cIFv/zIoQQwYgEciUjEYvBjBCdmLL/VCfcgPgmu54E=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="finalpro.exe" size="3382784">
+      <assemblyIdentity name="finalpro" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>qvwSZeOnedivc5OB+0OVxwc1c0Bodp4U9KSn5t5t8UA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ZedGraph.dll" size="307200">
+      <assemblyIdentity name="ZedGraph" version="5.1.5.28844" publicKeyToken="02A83CBD123FCD60" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>RjnOyzIQbo6k2kf8/LpiqSsrvLeMZCPFaomCrufslks=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="finalpro.exe.config" size="2540">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2dN+JcwhbR6UdKfx43OcwydodNKH+QmGop0bdQ47P+Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\FinalPro_log.ldf" size="851968" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>bPIfe1D0PFaK83+bTW+A0WuAsQ2fUYa1S6YSuUCq4zY=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=Bamtomi\Opeyemi" issuerKeyHash="cc7246c2fc32c0538548b9009a9b0be780931b03" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>gdPS/Hq27J5GgOlN7sj8bLjZNcsGpDnMloDKAcq/E3U=</DigestValue></Reference></SignedInfo><SignatureValue>X1dcRM7puiAJOGHLI2d+4gXa09uA0aFz5A9sE7rfSSlNQNXXrpUsNJkJ85P/Od4eE+2pYXnRXl1C1ptLX6LlU3h9v0GnseXIzK5lUBaQ5TtaZfs4l9awBShtIdm/RF4tq+z7cHUpQ7iY78MhKlrZI8ZRT8fgAeYTX6GhrpqC3ic=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>wIb4+xT7ttZcfg57Ls0OtoAwjyuoFgvNDFbQnSKbaIdmHGaA5akJ+4pfRiDHh8L60H9wkvZrtVV/is3obPUUULGuYxtCYYNvvh0SqldjBS879GPgDDwlJtF3QxAMqiu1zre1K7D7hZVc/7HvwQElrSE3pODTHg4/EA8uzZPdKDk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="7513bfca01ca8096cc39a406cb35d9b86cfcc8ee4de980469eecb67afcd2d381" Description="" Url=""><as:assemblyIdentity name="finalpro.exe" version="1.0.0.4" publicKeyToken="846b77f7a378d11a" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Bamtomi\Opeyemi</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>PtL6QhLr72UmaXMpFxeVyVJVnBwpuuybEOqxsyp6B9E=</DigestValue></Reference></SignedInfo><SignatureValue>rPYyGlrTFmy1T61Ll2FIgD7De0Tvreuh1ju5Dwr2MYaoZNXSsCvYdEE8aHPLVwdF8C0kcndlvIQ6yCNCNg31InC8/br0wRyUmkb5x7BRfoldWec6S8RCVPWLwTNTgkaEg5krD5WgZRpa+DlBUjNIQ3kb2hnaumAGkzCuB81CoYU=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>wIb4+xT7ttZcfg57Ls0OtoAwjyuoFgvNDFbQnSKbaIdmHGaA5akJ+4pfRiDHh8L60H9wkvZrtVV/is3obPUUULGuYxtCYYNvvh0SqldjBS879GPgDDwlJtF3QxAMqiu1zre1K7D7hZVc/7HvwQElrSE3pODTHg4/EA8uzZPdKDk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB1TCCAT6gAwIBAgIQcN8tZcYbmrFA2ZhsH5ZptDANBgkqhkiG9w0BAQsFADApMScwJQYDVQQDHh4AQgBhAG0AdABvAG0AaQBcAE8AcABlAHkAZQBtAGkwHhcNMTUwNjAzMDEzNTE3WhcNMTYwNjAyMDczNTE3WjApMScwJQYDVQQDHh4AQgBhAG0AdABvAG0AaQBcAE8AcABlAHkAZQBtAGkwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMCG+PsU+7bWXH4Oey7NDraAMI8rqBYLzQxW0J0im2iHZhxmgOWpCfuKX0Ygx4fC+tB/cJL2a7VVf4rN6Gz1FFCxrmMbQmGDb74dEqpXYwUvO/Rj4Aw8JSbRd0MQDKortc63tSuw+4WVXP+x78EBJa0hN6Tg0x4OPxAPLs2T3Sg5AgMBAAEwDQYJKoZIhvcNAQELBQADgYEAIgDSsgYomTiSaayFSl1Jqnln1+oQt2yA7WKX2n7dRU7Ae2tgKwz2Vp8bPac/s3CAjQuLU/m1/95jhQH94wOW7lADm2P33DO+E9lWvqNYKq320RS2Nnc0fjbeW+lvobP+LoWdahxa4Wye0OIVthgQfFmuvjDHkX9k3BzNi2ej8Sw=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
